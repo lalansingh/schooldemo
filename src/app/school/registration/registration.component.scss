@@ -1,0 +1,49 @@
+.registration {
+  justify-content: center;
+  display: flex;
+  .registration-section {
+    width: 50%;
+    .row {
+      padding: 5px;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #4c4e5f;
+      font-style: italic;
+    }
+    .heading {
+      color: #bd9a81;
+      text-decoration: underline;
+      font-size: 20px;
+      font-style: italic;
+    }
+    .btn-sec {
+      justify-content: center;
+      display: flex;
+      //   background: #a89eb554;
+      margin: 20px;
+      button {
+        width: 200px;
+        margin-right: 50px;
+      }
+    }
+    .top-sec {
+      font-size: 33px;
+      font-weight: bold;
+      font-style: italic;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+}
+.btn-outline-primary {
+  color: #5c5779;
+  border-color: #5c5779;
+  &:hover {
+    background: #5c5779;
+    color: #fff;
+  }
+}

@@ -1,0 +1,26 @@
+.students {
+  justify-content: center;
+  display: flex;
+  .students-section {
+    width: 96%;
+    .row {
+      padding: 5px;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #4c4e5f;
+      font-style: italic;
+    }
+    .top-sec {
+      font-size: 33px;
+      font-weight: bold;
+      //   font-style: italic;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 20px;
+      color: #67649a;
+    }
+  }
+}

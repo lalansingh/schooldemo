@@ -1,0 +1,70 @@
+.header {
+  margin-right: -19px;
+  background: #8080a7;
+  color: #f7eac7;
+}
+.header-content {
+  width: 99%;
+  .top-header {
+    height: 50px;
+    top: 20px;
+    line-height: 23px;
+    .logo-text {
+      font-size: 45px;
+      font-weight: bold;
+      font-family: fantasy;
+      text-decoration: underline;
+    }
+    .logo-sub-text {
+      font-size: 16px;
+      font-weight: bold;
+      font-style: italic;
+    }
+    .auth {
+      text-align: end;
+      padding-right: 0;
+      .login,
+      .register {
+        a {
+          text-decoration: none;
+          color: #f7eac7;
+          font-size: 14px;
+          font-weight: bold;
+          &:hover {
+            color: burlywood;
+          }
+        }
+      }
+    }
+    .user-info {
+      .user-type {
+        font-style: italic;
+        color: gold;
+      }
+    }
+  }
+  .top-menu {
+    height: 50px;
+    background: #5c5779;
+    justify-content: baseline;
+    display: flex;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    top: 30px;
+    justify-content: space-between;
+    a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 30px;
+    }
+  }
+}
+.bg-image {
+  background-image: url(../../../../assets/images/lan10-bg.png);
+  min-height: 100vh;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  background-position: center;
+}
