@@ -11,6 +11,9 @@ import { LandingComponent } from './school/shared/landing/landing.component';
 import { StudentsComponent } from './school/students/students.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { ActionComponent } from './school/students/child/action.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EmailComponent } from './school/dialog/email/email.component';
+import { SmsComponent } from './school/dialog/sms/sms.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,18 @@ import { ActionComponent } from './school/students/child/action.component';
     LayoutComponent,
     LandingComponent,
     StudentsComponent,
-    ActionComponent
+    ActionComponent,
+    EmailComponent,
+    SmsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([ActionComponent])
+    AgGridModule.withComponents([ActionComponent]),
+    NgbModule
   ],
   providers: [],
+  entryComponents: [EmailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
