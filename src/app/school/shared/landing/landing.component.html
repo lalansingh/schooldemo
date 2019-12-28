@@ -1,0 +1,43 @@
+<div class="header-content">
+    <div class="row justify-content-center header">
+        <div class="col-md-10 top-header">
+            <div class="row">
+                <div class="col-md-3 ml-n3">
+                    <span class="logo-text">ABCD</span><br>
+                    <span class="logo-sub-text">school</span>
+                </div>
+                <div class="col-md-3">
+                    <div class="user-info">
+                        <span class="user">Welcome</span><br>
+                        <span class="user-type">Lalan Singh</span> | <span class="user-type">Admin</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3 auth">
+                    <div class="login">
+                        <a href="javascript:void()" [routerLink]="['/login']">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 top-menu">
+            <a href="javascript:void()" [routerLink]="['/students']">Students</a>
+            <a href="javascript:void()" [routerLink]="['/registration']">Registraion</a>
+            <a href="javascript:void()">Admission</a>
+            <a href="javascript:void()">Exam</a>
+            <a href="javascript:void()">Result</a>
+            <a href="javascript:void()">Library</a>
+            <a href="javascript:void()">Staff</a>
+            <a href="javascript:void()">Transport</a>
+            <a href="javascript:void()">Alert</a>
+            <a href="javascript:void()">Notification</a>
+        </div>
+    </div>
+</div>
+<div class="bg-image">
+    <div class="pt-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

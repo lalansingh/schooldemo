@@ -1,0 +1,51 @@
+.header-content {
+  width: 99%;
+  .top-header {
+    height: 50px;
+    top: 20px;
+    line-height: 23px;
+    .logo-text {
+      font-size: 45px;
+      font-weight: bold;
+      font-family: fantasy;
+      text-decoration: underline;
+    }
+    .logo-sub-text {
+      font-size: 16px;
+      font-weight: bold;
+      font-style: italic;
+    }
+    .auth {
+      text-align: end;
+      padding-right: 0;
+      .login,
+      .register {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 14px;
+          font-weight: bold;
+          &:hover {
+            color: burlywood;
+          }
+        }
+      }
+    }
+  }
+  .top-menu {
+    height: 50px;
+    background: #151414;
+    justify-content: baseline;
+    display: flex;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    top: 30px;
+    a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 30px;
+    }
+  }
+}
