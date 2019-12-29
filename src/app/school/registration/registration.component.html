@@ -1,161 +1,163 @@
 <div class="registration">
     <div class="registration-section">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="top-sec">
-                    <span>REGISTRATION FORM</span>
+        <form #createForm="ngForm">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-sec">
+                        <span>{{title}}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Registrtion Number#</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Registrtion Number#</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.registratonno" name="registratonno" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>First Name</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.fname" name="fname" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>First Name</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Middle Name</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.mname" name="mname" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Last Name</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.lname" name="lname" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Middle Name</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>DOB</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="DD/MM/YYY" [(ngModel)]="student.dob" name="dob" [disabled]="isViewMode" type="text" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Father's Name</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.father" name="father" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Last Name</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Mother's Name</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.mother" name="mother" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Mobile Number</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="student.mobile" name="mobile" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>DOB</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Email Id</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="xyz@gmail.com" [(ngModel)]="student.email" name="email" [disabled]="isViewMode" type="text" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input placeholder="DD/MM/YYY" type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="heading">Address</label>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Father's Name</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>House No/Ploat No</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Village/Street</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Mother's Name</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Landmark</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Post Office</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" [disabled]="isViewMode" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Mobile Number</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>District</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <select [disabled]="isViewMode" class="form-control">
+                    </select>
+                </div>
             </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>State</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <select [disabled]="isViewMode" class="form-control">
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Email Id</label><small>*</small>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Country</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <select [disabled]="isViewMode" class="form-control">
+                    </select>
+                </div>
             </div>
-            <div class="col-md-6">
-                <input placeholder="xyz@gmail.com" type="text" class="form-control">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Zip Code</label><small>*</small>
+                </div>
+                <div class="col-md-6">
+                    <input [disabled]="isViewMode" type="text" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label class="heading">Address</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>House No/Ploat No</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Village/Street</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Landmark</label>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Post Office</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>District</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <select class="form-control">
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>State</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <select class="form-control">
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Country</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <select class="form-control">
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Zip Code</label><small>*</small>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control">
-            </div>
-        </div>
+        </form>
         <div class="row">
             <div class="col-md-12">
                 <div class="btn-sec">
-                    <button class="btn btn-outline-primary">Save</button>
-                    <button class="btn btn-outline-secondary">Clear</button>
+                    <button [disabled]="isViewMode" class="btn btn-outline-primary">Save</button>
+                    <button [disabled]="isViewMode" class="btn btn-outline-secondary">Clear</button>
                 </div>
             </div>
         </div>

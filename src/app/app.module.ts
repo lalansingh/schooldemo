@@ -14,6 +14,9 @@ import { ActionComponent } from './school/students/child/action.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EmailComponent } from './school/dialog/email/email.component';
 import { SmsComponent } from './school/dialog/sms/sms.component';
+import { FormsModule } from '@angular/forms';
+import { BulkSmsComponent } from './school/bulk-sms/bulk-sms.component';
+import { BulkEmailComponent } from './school/bulk-email/bulk-email.component';
 
 @NgModule({
   declarations: [
@@ -26,16 +29,19 @@ import { SmsComponent } from './school/dialog/sms/sms.component';
     StudentsComponent,
     ActionComponent,
     EmailComponent,
-    SmsComponent
+    SmsComponent,
+    BulkSmsComponent,
+    BulkEmailComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AgGridModule.withComponents([ActionComponent]),
     NgbModule
   ],
   providers: [],
-  entryComponents: [EmailComponent],
+  entryComponents: [EmailComponent, SmsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

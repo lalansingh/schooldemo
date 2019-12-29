@@ -1,4 +1,37 @@
-<p>email works!</p>
+<div class="modal-header">
+    <h4 class="modal-title">Email</h4>
+</div>
+<div class="email-sec">
+    <div class="row">
+        <div class="col-md-6">Subject</div>
+        <div class="col-md-6">
+            <select class="form-control">
+                <option value="volvo">Holiday</option>
+                <option value="volvo">Contratulatin</option>
+                <option value="volvo">Fee</option>
+                <option value="volvo">Notification</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">From</div>
+        <div class="col-md-6">
+            <input class="form-control" type="text" value="admin@gmail.com">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">To</div>
+        <div class="col-md-11">
+            <input class="form-control" type="text" value="abc@gmail.com">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+</div>
 <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Send</button>
     <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
 </div>

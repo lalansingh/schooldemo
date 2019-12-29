@@ -1,1 +1,51 @@
-<p>sms works!</p>
+<div class="modal-header">
+    <h4 class="modal-title">SMS</h4>
+</div>
+<div class="sms-sec">
+    <div class="row">
+        <div class="col-md-3">Student Name</div>
+        <div class="col-md-3">
+            <label>Rakesh Kumar</label>
+        </div>
+        <div class="col-md-3">Roll No</div>
+        <div class="col-md-3">
+            <label>67677776</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Father's Name</div>
+        <div class="col-md-3">
+            <label>Mr. Kishore</label>
+        </div>
+        <div class="col-md-3">Mobile No</div>
+        <div class="col-md-3">
+            <label>9878765456</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Subject</div>
+        <div class="col-md-6">
+            <select class="form-control">
+                <option value="volvo">Holiday</option>
+                <option value="volvo">Contratulatin</option>
+                <option value="volvo">Fee</option>
+                <option value="volvo">Notification</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Other Mobile (if require)</div>
+        <div class="col-md-9">
+            <input class="form-control" type="text" value="+91-87-6543-4567">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Send</button>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>
