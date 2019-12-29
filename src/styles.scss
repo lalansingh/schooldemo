@@ -7,5 +7,14 @@
   color: #fff !important;
 }
 .ag-theme-balham .ag-icon {
-  color: #fff !important;
+  color: #594263 !important;
+}
+
+.btn-outline-primary {
+  color: #5c5779 !important;
+  border-color: #5c5779 !important;
+  &:hover {
+    background: #5c5779 !important;
+    color: #fff !important;
+  }
 }

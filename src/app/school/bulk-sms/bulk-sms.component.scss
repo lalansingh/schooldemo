@@ -1,0 +1,41 @@
+.sms {
+  justify-content: center;
+  display: flex;
+  .sms-section {
+    width: 80%;
+    .row {
+      padding: 5px;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #4c4e5f;
+      font-style: italic;
+    }
+    .top-sec {
+      font-size: 33px;
+      font-weight: bold;
+      //   font-style: italic;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 20px;
+      color: #67649a;
+    }
+    .filter-header {
+      border: 5px solid #b8b1c3;
+      border-radius: 5px;
+      padding: 20px;
+      .btn-sec {
+        text-align: end;
+        button {
+          margin-left: 10px;
+        }
+      }
+      .divider {
+        border-bottom: 2px solid #b8b1c3;
+        padding-top: 5px;
+      }
+    }
+  }
+}
