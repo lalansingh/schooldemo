@@ -77,7 +77,7 @@ export class StudentsComponent implements OnInit {
     columnDefs: this.columnDefs,
     rowData: this.rowData
   };
-  private frameworkComponents;
+  public frameworkComponents;
 
   constructor() {
     this.frameworkComponents = {
