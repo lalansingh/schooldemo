@@ -17,15 +17,12 @@
       font-size: 33px;
       font-weight: bold;
       //   font-style: italic;
-      justify-content: center;
       display: flex;
-      margin-bottom: 20px;
-      color: #67649a;
+      margin-bottom: 5px;
+      color: #fff;
+      padding-left: 10px;
     }
     .filter-header {
-      border: 5px solid #b8b1c3;
-      border-radius: 5px;
-      padding: 20px;
       .btn-sec {
         text-align: end;
         button {
@@ -35,6 +32,10 @@
       .divider {
         border-bottom: 2px solid #b8b1c3;
         padding-top: 5px;
+      }
+      .import-user{
+        font-size: 37px;
+        color: #716c75;
       }
     }
   }
